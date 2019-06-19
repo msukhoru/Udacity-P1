@@ -90,7 +90,7 @@ plt.savefig("test_images_output/{}_hough.jpg".format(image_name))
 ```
 The output at this stage looked like this:
 
-![](solidWhiteRight_hough.jpg "Hough Output")
+![](test_images_output/solidWhiteCurve_hough.jpg "Hough Output")
 
 To fill in the gaps between the lanes, individual slopes and intercepts were averaged to get an approximation. The slope, intercept, and length of each hough element was calculated. Vertical elements are ignored to avoid division by zero:
 
@@ -163,7 +163,7 @@ final_image = draw_extrapolated_lines(image, lanes, img_width, img_height, roi_y
 plt.savefig("test_images_output/{}_extrapolated.jpg".format(image_name))
 ```
 
-![](solidWhiteRight_extrapolated.jpg "Hough Output")
+![](test_images_output/solidWhiteCurve_extrapolated.jpg "Hough Output")
 
 ### 2. Shorcomings
 
